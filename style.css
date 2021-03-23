@@ -1,0 +1,189 @@
+:root{
+    --color1: white;
+    --color2: #212529;
+    --color3: aliceblue;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Calibri';
+}
+
+header {
+    padding: 0.7rem 0;
+    background-color: var(--color2);
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 0.5rem 0;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+footer{
+    background-color: var(--color2);
+    padding: 1rem 2rem;
+}
+
+/* CSS of all the upper menu of the webpage */
+
+.upperMenu { 
+    padding: 0 .7rem;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.headerContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: initial;
+}
+
+.iconTC img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 20%;
+    padding: 0.1rem 0.1rem;
+    align-items: middle;
+    margin-top: 0.2rem;
+}
+
+.textTC {
+    padding: 1rem 1rem;
+    font-family: 'Poppins';
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--color1);
+    font-weight: 300;
+}
+
+.menuButton {
+    padding: 1rem 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--color1);
+    font-weight: 800;
+    transition: color 0.2s;
+}
+
+.menuButton:hover{
+    color: rgb(153, 158, 163);
+}
+
+.buttons--list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 2.5rem;
+}
+
+.textTC:active, .menuButtons:active {
+    text-decoration: none;
+}
+
+/* End of header/menu, main time
+
+    .mainContainer's CSS */
+
+.mainContainer{
+    background-color: var(--color1);
+}
+
+.mainContainer--header {
+    justify-content: center;
+    color: var(--color2);
+    font-size: 1.2rem;
+}
+
+.mainContainer--body > p{
+    display: block;
+    margin: 1rem 6rem;
+    text-align: center;
+    line-height: 1.25rem;
+    font-size: 1rem;
+}
+.mainContainer--body > p > a, .mainContainer--body > p > a:visited, .mainContainer--body > p > a:active {
+    text-decoration: none;
+    font-weight: 600;
+    color:darkslateblue;
+}
+
+/* .mainBackground time */
+
+.mainBackground {
+    background-image: url(/images/GOTC.png);    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--color1);
+    height: 87.3vh;
+    display: block;
+    padding: 3rem;   
+}
+
+.mainBackground--brand {
+    text-align: center;
+    display: block;
+    margin-top: 7.5rem;
+}
+
+.mainBackground--brand > img {
+    height: 8rem;
+    width: 8rem;
+}
+
+.mainBackground--title {
+    font-size: 3rem;
+    font-family: 'Poppins';
+    font-weight: 200;
+    text-shadow: .2rem .2rem 0 rgb(64, 67, 70);
+    color: var(--color1);
+    margin: 0 auto;
+}
+
+.mainContainer--list {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 6rem;
+    line-height: 1.6rem;
+    font-size: 1rem;
+}
+
+.mainSpace {
+    width: 70vw;
+    margin: 0.5rem;
+    padding: 1rem;
+    padding-bottom: 0;
+    display: block;
+    position: relative;
+    left: 15%;
+}
+
+.mainSpace > hr {
+    border: none;
+    height: 1.5px;
+    background-color: lightgrey;
+}
+
+/* End of main. Footer starts */
+
+.footerBar {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerBar--TC, .footerBar--copy  {
+    color: var(--color3);
+    margin: 0 auto;
+    font-family: 'Poppins';
+    padding: 2rem 0;
+}
+
+.footerBar--icon{
+    color: var(--color3);
+    padding-top: 1.25rem;
+    margin: 0 auto;
+}
